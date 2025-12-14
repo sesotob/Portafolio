@@ -1,0 +1,100 @@
+
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 768px) {
+  #Contacto form label {
+    font-weight: 400;
+  }
+
+  .navbar-brand{
+    width: 100px;
+  }
+
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 80px; 
+}
+
+.portfolio-container {
+    max-width: 900px;
+    margin: 40px auto; 
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.portfolio-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.portfolio-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.portfolio-image {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-image img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+    .portfolio-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+
+/* Botón Volver */
+.btn-volver {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 30px auto 10px;
+    padding: 10px 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, #0d6efd, #0a58ca);
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Centrar el botón */
+body > .btn-volver {
+    display: flex;
+    width: fit-content;
+}
+
+/* Hover */
+.btn-volver:hover {
+    background: linear-gradient(135deg, #0a58ca, #084298);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Icono */
+.btn-volver i {
+    font-size: 0.9rem;
+}
